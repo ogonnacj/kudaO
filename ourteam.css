@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    color: #666666;
+}
+.container .icons{
+   display: grid;
+   grid-template-columns: 1fr;
+   position: absolute;
+   left: 0;
+   top: 150px;
+}
+.container .icons i{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.container .icons i:hover{
+    width:70px ;
+    padding: 10px;
+}
+.container .icons a{
+    text-decoration: none;
+}
+.container .icons a .red{
+    background-color: #DB4437;
+    
+}
+.container .icons a .blue1{
+    background-color: #0077B5;
+}
+.container .icons a .blue2{
+    background-color: #1DA1F2;
+}
+.container .icons a .blue3{
+    background-color: #3b5998;
+}
+.container .text{
+    width: 50%;
+    text-align: left;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+.container .text .header h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #8DA0B3;
+}
+.container .text .header h1{
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: #8DA0B3;
+}
+.container .text .apply .box{
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 1px solid #8DA0B3;
+    display: flex;
+    margin-bottom: 20px;
+}
+.container .text .apply .box  div{
+    width: 70%;
+    margin-right: 100px;
+}
+.container .text .apply .box h3{
+    padding-bottom: 5px;
+}
+.container .text .apply .box ul{
+    display: flex;
+}
+.container .text .apply .box ul li{
+    padding-left: 10px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+.container .text .apply .box button{
+     width: 80px;
+     height: 30px;
+     margin-top: 20px;
+     background-color: #4CABCD;
+     border: 0;
+     border-radius: 5px;
+     color: #fff;
+}
+.container .text .footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+.container .text .footer a{
+    text-decoration: none;
+    color: #666666;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:800px) {
+    .container .icons{
+        display: none;
+    }
+    .container .text{
+        width: 90%;
+    }
+    .container .text .apply .box button{
+     display: none;
+   }
+   .container .text .apply .box ul li{
+     padding-left: 10px;
+     list-style: none;
+     padding-bottom: 20px;
+     display: flex;
+    }
+    .container .text .apply .box  div{
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+
+
